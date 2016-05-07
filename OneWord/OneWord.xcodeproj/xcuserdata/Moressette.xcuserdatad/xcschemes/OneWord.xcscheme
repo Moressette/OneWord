@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84BA36011CDD8AA400F21548"
+               BlueprintIdentifier = "84BA363B1CDD8BCD00F21548"
                BuildableName = "OneWord.app"
                BlueprintName = "OneWord"
                ReferencedContainer = "container:OneWord.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84BA36151CDD8AA400F21548"
+               BlueprintIdentifier = "84BA364F1CDD8BCD00F21548"
                BuildableName = "OneWordTests.xctest"
                BlueprintName = "OneWordTests"
                ReferencedContainer = "container:OneWord.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84BA36201CDD8AA400F21548"
+               BlueprintIdentifier = "84BA365A1CDD8BCD00F21548"
                BuildableName = "OneWordUITests.xctest"
                BlueprintName = "OneWordUITests"
                ReferencedContainer = "container:OneWord.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84BA36011CDD8AA400F21548"
+            BlueprintIdentifier = "84BA363B1CDD8BCD00F21548"
             BuildableName = "OneWord.app"
             BlueprintName = "OneWord"
             ReferencedContainer = "container:OneWord.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84BA36011CDD8AA400F21548"
+            BlueprintIdentifier = "84BA363B1CDD8BCD00F21548"
             BuildableName = "OneWord.app"
             BlueprintName = "OneWord"
             ReferencedContainer = "container:OneWord.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84BA36011CDD8AA400F21548"
+            BlueprintIdentifier = "84BA363B1CDD8BCD00F21548"
             BuildableName = "OneWord.app"
             BlueprintName = "OneWord"
             ReferencedContainer = "container:OneWord.xcodeproj">
