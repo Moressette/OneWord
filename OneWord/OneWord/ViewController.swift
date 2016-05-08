@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //获取数据库实例
         db = SQLiteDB.sharedInstance()
         //如果表还不存在则创建表（其中uid为自增主键）
@@ -29,14 +30,16 @@ class ViewController: UIViewController {
             showWord.text = words as? String
         }
         
-        //showWord.text = "123"
-        //showWord.text = data as! String
-        /*if data.count > 0{
-            //let words = data[data.count-1]
-            showWord.text = data as? String
-            
-        }*/
+        let newWords:NSString = "aaaaa"
+        let userDefault = NSUserDefaults(suiteName: "group.OneWord")
+        userDefault!.setObject(newWords, forKey: "com.random.OneWord.kkk")
+        userDefault!.synchronize()
     }
+    
+    
+    
+    
+    
     
     var id = 2
     @IBAction func okTapped(sender: AnyObject) {
@@ -47,21 +50,16 @@ class ViewController: UIViewController {
             showWord.text = w as? String
         }
         id++
+        //new insert
+        let userDefault = NSUserDefaults(suiteName: "group.OneWord")
+        userDefault!.synchronize()
+        userDefault!.removeObjectForKey("com.random.OneWord.kkk")
+        let newWords:NSString = "ddddd"
+        userDefault!.setObject(newWords, forKey: "com.random.OneWord.kkk")
+        userDefault!.synchronize()
     }
    
     
-
-
-    /*//从SQLite加载数据
-    func initUser() {
-        let data = db.query("select * from t_user")
-        if data.count > 0 {
-            //获取最后一行数据显示
-            let user = data[data.count - 1]
-            txtUname.text = user["uname"] as? String
-            txtMobile.text = user["mobile"] as? String
-        }
-    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

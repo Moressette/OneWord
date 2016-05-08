@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		842F768A1CDDAA4300CDB9ED /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 842F76891CDDAA4300CDB9ED /* libsqlite3.0.tbd */; };
 		8484085E1CDECDB30025076C /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484085B1CDECDB30025076C /* SQLiteDB.swift */; };
 		8484085F1CDECDB30025076C /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484085C1CDECDB30025076C /* SQLTable.swift */; };
 		848408601CDECDB30025076C /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484085D1CDECDB30025076C /* String-Extras.swift */; };
 		848408651CDECF530025076C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848408611CDECF530025076C /* LaunchScreen.storyboard */; };
 		848408661CDECF530025076C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848408631CDECF530025076C /* Main.storyboard */; };
+		8484086A1CDED4DA0025076C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 848408691CDED4DA0025076C /* libsqlite3.0.tbd */; };
+		848408721CDEDCFD0025076C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848408711CDEDCFD0025076C /* NotificationCenter.framework */; };
+		848408751CDEDCFD0025076C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848408741CDEDCFD0025076C /* TodayViewController.swift */; };
+		848408781CDEDCFD0025076C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848408761CDEDCFD0025076C /* MainInterface.storyboard */; };
+		8484087D1CDEDCFD0025076C /* OneWordExtention.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8484086F1CDEDCFD0025076C /* OneWordExtention.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		84BA36401CDD8BCD00F21548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA363F1CDD8BCD00F21548 /* AppDelegate.swift */; };
 		84BA36421CDD8BCD00F21548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA36411CDD8BCD00F21548 /* ViewController.swift */; };
 		84BA36471CDD8BCD00F21548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BA36461CDD8BCD00F21548 /* Assets.xcassets */; };
@@ -21,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8484087A1CDEDCFD0025076C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BA36341CDD8BCD00F21548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8484086E1CDEDCFD0025076C;
+			remoteInfo = OneWordExtention;
+		};
 		84BA36511CDD8BCD00F21548 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84BA36341CDD8BCD00F21548 /* Project object */;
@@ -37,14 +48,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8484087C1CDEDCFD0025076C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8484087D1CDEDCFD0025076C /* OneWordExtention.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		842F76891CDDAA4300CDB9ED /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		845E92651CDDC85D0048539E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		8484085B1CDECDB30025076C /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
 		8484085C1CDECDB30025076C /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
 		8484085D1CDECDB30025076C /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
 		848408621CDECF530025076C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848408641CDECF530025076C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		848408691CDED4DA0025076C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		8484086F1CDEDCFD0025076C /* OneWordExtention.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneWordExtention.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		848408711CDEDCFD0025076C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		848408741CDEDCFD0025076C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		848408771CDEDCFD0025076C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		848408791CDEDCFD0025076C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848408811CDEDD7B0025076C /* OneWordExtention.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OneWordExtention.entitlements; sourceTree = "<group>"; };
+		848408821CDEDDAE0025076C /* OneWord.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OneWord.entitlements; sourceTree = "<group>"; };
 		84A983DD1CDDEE8200A6E4C4 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 		84BA363C1CDD8BCD00F21548 /* OneWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BA363F1CDD8BCD00F21548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,11 +92,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8484086C1CDEDCFD0025076C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848408721CDEDCFD0025076C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84BA36391CDD8BCD00F21548 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842F768A1CDDAA4300CDB9ED /* libsqlite3.0.tbd in Frameworks */,
+				8484086A1CDED4DA0025076C /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,14 +135,35 @@
 			path = SQLiteDB;
 			sourceTree = "<group>";
 		};
+		848408701CDEDCFD0025076C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848408711CDEDCFD0025076C /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		848408731CDEDCFD0025076C /* OneWordExtention */ = {
+			isa = PBXGroup;
+			children = (
+				848408811CDEDD7B0025076C /* OneWordExtention.entitlements */,
+				848408741CDEDCFD0025076C /* TodayViewController.swift */,
+				848408761CDEDCFD0025076C /* MainInterface.storyboard */,
+				848408791CDEDCFD0025076C /* Info.plist */,
+			);
+			path = OneWordExtention;
+			sourceTree = "<group>";
+		};
 		84BA36331CDD8BCD00F21548 = {
 			isa = PBXGroup;
 			children = (
-				842F76891CDDAA4300CDB9ED /* libsqlite3.0.tbd */,
+				848408691CDED4DA0025076C /* libsqlite3.0.tbd */,
 				84A983DD1CDDEE8200A6E4C4 /* data.db */,
 				84BA363E1CDD8BCD00F21548 /* OneWord */,
 				84BA36531CDD8BCD00F21548 /* OneWordTests */,
 				84BA365E1CDD8BCD00F21548 /* OneWordUITests */,
+				848408731CDEDCFD0025076C /* OneWordExtention */,
+				848408701CDEDCFD0025076C /* Frameworks */,
 				84BA363D1CDD8BCD00F21548 /* Products */,
 				8484085A1CDECDB30025076C /* SQLiteDB */,
 			);
@@ -114,6 +175,7 @@
 				84BA363C1CDD8BCD00F21548 /* OneWord.app */,
 				84BA36501CDD8BCD00F21548 /* OneWordTests.xctest */,
 				84BA365B1CDD8BCD00F21548 /* OneWordUITests.xctest */,
+				8484086F1CDEDCFD0025076C /* OneWordExtention.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +183,7 @@
 		84BA363E1CDD8BCD00F21548 /* OneWord */ = {
 			isa = PBXGroup;
 			children = (
+				848408821CDEDDAE0025076C /* OneWord.entitlements */,
 				84BA363F1CDD8BCD00F21548 /* AppDelegate.swift */,
 				848408611CDECF530025076C /* LaunchScreen.storyboard */,
 				848408631CDECF530025076C /* Main.storyboard */,
@@ -153,6 +216,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8484086E1CDEDCFD0025076C /* OneWordExtention */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8484087E1CDEDCFD0025076C /* Build configuration list for PBXNativeTarget "OneWordExtention" */;
+			buildPhases = (
+				8484086B1CDEDCFD0025076C /* Sources */,
+				8484086C1CDEDCFD0025076C /* Frameworks */,
+				8484086D1CDEDCFD0025076C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneWordExtention;
+			productName = OneWordExtention;
+			productReference = 8484086F1CDEDCFD0025076C /* OneWordExtention.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		84BA363B1CDD8BCD00F21548 /* OneWord */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84BA36641CDD8BCD00F21548 /* Build configuration list for PBXNativeTarget "OneWord" */;
@@ -160,10 +240,12 @@
 				84BA36381CDD8BCD00F21548 /* Sources */,
 				84BA36391CDD8BCD00F21548 /* Frameworks */,
 				84BA363A1CDD8BCD00F21548 /* Resources */,
+				8484087C1CDEDCFD0025076C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8484087B1CDEDCFD0025076C /* PBXTargetDependency */,
 			);
 			name = OneWord;
 			productName = OneWord;
@@ -216,9 +298,23 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = TeamRandom;
 				TargetAttributes = {
+					8484086E1CDEDCFD0025076C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6KEWVGQ53L;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					84BA363B1CDD8BCD00F21548 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 6KEWVGQ53L;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					84BA364F1CDD8BCD00F21548 = {
 						CreatedOnToolsVersion = 7.2;
@@ -248,11 +344,20 @@
 				84BA363B1CDD8BCD00F21548 /* OneWord */,
 				84BA364F1CDD8BCD00F21548 /* OneWordTests */,
 				84BA365A1CDD8BCD00F21548 /* OneWordUITests */,
+				8484086E1CDEDCFD0025076C /* OneWordExtention */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8484086D1CDEDCFD0025076C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848408781CDEDCFD0025076C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84BA363A1CDD8BCD00F21548 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +385,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8484086B1CDEDCFD0025076C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848408751CDEDCFD0025076C /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84BA36381CDD8BCD00F21548 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,6 +424,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8484087B1CDEDCFD0025076C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8484086E1CDEDCFD0025076C /* OneWordExtention */;
+			targetProxy = 8484087A1CDEDCFD0025076C /* PBXContainerItemProxy */;
+		};
 		84BA36521CDD8BCD00F21548 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 84BA363B1CDD8BCD00F21548 /* OneWord */;
@@ -340,9 +458,47 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+		848408761CDEDCFD0025076C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848408771CDEDCFD0025076C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8484087F1CDEDCFD0025076C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneWordExtention/OneWordExtention.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = OneWordExtention/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.random.OneWord.OneWordExtention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		848408801CDEDCFD0025076C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneWordExtention/OneWordExtention.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = OneWordExtention/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.random.OneWord.OneWordExtention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		84BA36621CDD8BCD00F21548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,12 +584,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OneWord/OneWord.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OneWord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.random.OneWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "OneWord/Bridging-Header.h";
 			};
 			name = Debug;
@@ -442,12 +606,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OneWord/OneWord.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OneWord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.random.OneWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "OneWord/Bridging-Header.h";
 			};
 			name = Release;
@@ -503,6 +675,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8484087E1CDEDCFD0025076C /* Build configuration list for PBXNativeTarget "OneWordExtention" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8484087F1CDEDCFD0025076C /* Debug */,
+				848408801CDEDCFD0025076C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		84BA36371CDD8BCD00F21548 /* Build configuration list for PBXProject "OneWord" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
