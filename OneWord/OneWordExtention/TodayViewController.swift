@@ -19,8 +19,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Do any additional setup after loading the view from its nib.
         let userDefault = NSUserDefaults(suiteName: "group.OneWord")
         userDefault!.synchronize()
-        let labelWord = userDefault!.stringForKey("com.random.OneWord.kkk")
-        print(labelWord)
+        //let labelWord = userDefault!.stringForKey("com.random.OneWord.kkk")
+        let labelWord: String = userDefault?.objectForKey("com.random.OneWord.kkk") as! String
         extWord.text = labelWord
 
     }

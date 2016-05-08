@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>OneWordExtention.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8484086E1CDEDCFD0025076C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>84BA363B1CDD8BCD00F21548</key>
 		<dict>
 			<key>primary</key>

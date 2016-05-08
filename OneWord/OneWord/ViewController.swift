@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var showWord: UILabel!
     
+    var newWords:NSString = "bbbbb"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,6 @@ class ViewController: UIViewController {
             showWord.text = words as? String
         }
         
-        let newWords:NSString = "aaaaa"
         let userDefault = NSUserDefaults(suiteName: "group.OneWord")
         userDefault!.setObject(newWords, forKey: "com.random.OneWord.kkk")
         userDefault!.synchronize()
@@ -51,10 +51,9 @@ class ViewController: UIViewController {
         }
         id++
         //new insert
+        newWords = "ddddd"
         let userDefault = NSUserDefaults(suiteName: "group.OneWord")
-        userDefault!.synchronize()
-        userDefault!.removeObjectForKey("com.random.OneWord.kkk")
-        let newWords:NSString = "ddddd"
+       // userDefault!.removeObjectForKey("com.random.OneWord.kkk")
         userDefault!.setObject(newWords, forKey: "com.random.OneWord.kkk")
         userDefault!.synchronize()
     }
