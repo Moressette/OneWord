@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		842F768A1CDDAA4300CDB9ED /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 842F76891CDDAA4300CDB9ED /* libsqlite3.0.tbd */; };
-		845E92621CDDC8430048539E /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E925F1CDDC8430048539E /* SQLiteDB.swift */; };
-		845E92631CDDC8430048539E /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E92601CDDC8430048539E /* SQLTable.swift */; };
-		845E92641CDDC8430048539E /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E92611CDDC8430048539E /* String-Extras.swift */; };
 		845E92681CDDC8FD0048539E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845E92661CDDC8FD0048539E /* Main.storyboard */; };
+		8484085E1CDECDB30025076C /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484085B1CDECDB30025076C /* SQLiteDB.swift */; };
+		8484085F1CDECDB30025076C /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484085C1CDECDB30025076C /* SQLTable.swift */; };
+		848408601CDECDB30025076C /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484085D1CDECDB30025076C /* String-Extras.swift */; };
 		84BA36401CDD8BCD00F21548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA363F1CDD8BCD00F21548 /* AppDelegate.swift */; };
 		84BA36421CDD8BCD00F21548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA36411CDD8BCD00F21548 /* ViewController.swift */; };
 		84BA36471CDD8BCD00F21548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BA36461CDD8BCD00F21548 /* Assets.xcassets */; };
@@ -39,12 +39,11 @@
 
 /* Begin PBXFileReference section */
 		842F76891CDDAA4300CDB9ED /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		845E925F1CDDC8430048539E /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
-		845E92601CDDC8430048539E /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
-		845E92611CDDC8430048539E /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
 		845E92651CDDC85D0048539E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		845E92671CDDC8FD0048539E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../../Downloads/hangge_645/hangge_645/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		84A983DB1CDDE2BD00A6E4C4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		8484085B1CDECDB30025076C /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		8484085C1CDECDB30025076C /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		8484085D1CDECDB30025076C /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
 		84A983DD1CDDEE8200A6E4C4 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 		84BA363C1CDD8BCD00F21548 /* OneWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BA363F1CDD8BCD00F21548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,15 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		845E925E1CDDC8430048539E /* SQLiteDB */ = {
+		8484085A1CDECDB30025076C /* SQLiteDB */ = {
 			isa = PBXGroup;
 			children = (
-				845E925F1CDDC8430048539E /* SQLiteDB.swift */,
-				845E92601CDDC8430048539E /* SQLTable.swift */,
-				845E92611CDDC8430048539E /* String-Extras.swift */,
+				8484085B1CDECDB30025076C /* SQLiteDB.swift */,
+				8484085C1CDECDB30025076C /* SQLTable.swift */,
+				8484085D1CDECDB30025076C /* String-Extras.swift */,
 			);
-			name = SQLiteDB;
-			path = ../../../../Downloads/hangge_645/SQLiteDB;
+			path = SQLiteDB;
 			sourceTree = "<group>";
 		};
 		84BA36331CDD8BCD00F21548 = {
@@ -106,7 +104,7 @@
 				84BA36531CDD8BCD00F21548 /* OneWordTests */,
 				84BA365E1CDD8BCD00F21548 /* OneWordUITests */,
 				84BA363D1CDD8BCD00F21548 /* Products */,
-				845E925E1CDDC8430048539E /* SQLiteDB */,
+				8484085A1CDECDB30025076C /* SQLiteDB */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,7 +128,6 @@
 				84BA36481CDD8BCD00F21548 /* LaunchScreen.storyboard */,
 				84BA364B1CDD8BCD00F21548 /* Info.plist */,
 				845E92651CDDC85D0048539E /* Bridging-Header.h */,
-				84A983DB1CDDE2BD00A6E4C4 /* MyPlayground.playground */,
 			);
 			path = OneWord;
 			sourceTree = "<group>";
@@ -287,9 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845E92641CDDC8430048539E /* String-Extras.swift in Sources */,
-				845E92621CDDC8430048539E /* SQLiteDB.swift in Sources */,
-				845E92631CDDC8430048539E /* SQLTable.swift in Sources */,
+				848408601CDECDB30025076C /* String-Extras.swift in Sources */,
+				8484085E1CDECDB30025076C /* SQLiteDB.swift in Sources */,
+				8484085F1CDECDB30025076C /* SQLTable.swift in Sources */,
 				84BA36421CDD8BCD00F21548 /* ViewController.swift in Sources */,
 				84BA36401CDD8BCD00F21548 /* AppDelegate.swift in Sources */,
 			);
@@ -431,7 +428,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OneWord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.random.OneWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,7 +442,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OneWord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.random.OneWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
